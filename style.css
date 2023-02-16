@@ -1,52 +1,159 @@
+:root {
+  --main-background: #f9f8f8f8;
+  --btn-color: #1768ac;
+  --btn-color2: #cc2936;
+  --footer: #817f75;
+  --black: #1c1d21;
+}
+
+
 * {
   padding: 0;
   margin: 0;
-  text-decoration: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 
 body {
-  /* background-color: grey; */
-  background: url(./project_images/background1.jpg);
-  background-size: cover;
-  /* background-position: inherit; */
-  background-repeat: no-repeat;
-  background-image: ;
-}
-
-@media screen {
-
-}
-
-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 40rem;
-  background-color: rgba(249, 248, 248, 10%);
-  border-radius: 5px;
-}
+  flex-direction: column;
+  background-color: var(--main-background);
+  padding: 15px;
 
-.menu_items {
-  display: inline-flex;
-  list-style: none;
-  gap: 40px;
-
-}
-
-li a {
-  color: black;
-  font-weight: bolder;
 }
 
 a {
   color: black;
-  font-weight: bolder;
+  text-decoration: none;
 }
 
-.search_icon {
-  background-color: black;
-  color: black;
+/*=============================== NAVIGATION BAR =====================================================*/
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  /* border: 1px solid; */
+  border-radius: 6px;
+  background-color: var(--footer);
+}
+
+.menu_items {
+  display: flex;
+  list-style: none;
+
+}
+
+.nav_items > a {
+  padding: 0 20px;
+  list-style: none;
+}
+
+
+/*==================================== Economic Calendar on Home ========================================>*/
+
+.main_content {
+  /* border: 1px solid blue; */
+  min-height: 80vh;
+
+}
+
+.economic_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.data_table {
+  /* border: 1px solid green; */
+  justify-content: center;
+  align-items: center;
+  background-color: #817f75;
+  border-radius: 6px;
+}
+
+
+td {
+  padding: 0 6px;
+}
+
+
+/*======================================== Footer ==============================================*/
+
+.extras {
+  background-color: var(--footer);
+  border-radius: 6px;
+}
+
+.foot_notes {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+
+
+/*==================================================== Mobile Responsive =========================================*/
+
+@media screen and (min-width: 414px) and (min-height: 736px) {
+  .main_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .economic_data {
+    display: flex;
+
+  }
+}
+
+/*============================================ About Page =============================================*/
+
+.about {
+  flex-direction: column;
+  min-height: 80vh;
+  /* border: 1px solid; */
+
+}
+
+.about,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+
+  padding: 10px 100px;
+  height: 300px;
+  width: 700px;
+
+}
+
+.myPhoto {
+
+}
+
+.portrait {
+  float: left;
+  height: 257px;
+  width: 252px;
+
+}
+
+.bio > p {
+  padding: 0 20px;
+
+}
+
+.myPhoto > img {
+  border-radius: 20px;
+
 }

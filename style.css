@@ -37,6 +37,7 @@ a {
   padding: 15px;
   /* border: 1px solid; */
   border-radius: 6px;
+  box-shadow: 10px 5px 5px rgb(41, 40, 40);
   background-color: var(--footer);
 }
 
@@ -75,12 +76,17 @@ a {
   align-items: center;
   background-color: #817f75;
   border-radius: 6px;
+  padding: 10px;
 }
 
 
 td {
-  padding: 0 6px;
+  padding: 0 50px;
+  text-align: center;
+  border: 0.5px solid black;
+
 }
+
 
 
 /*======================================== Footer ==============================================*/
@@ -88,6 +94,7 @@ td {
 .extras {
   background-color: var(--footer);
   border-radius: 6px;
+  align-content: flex-end;
 }
 
 .foot_notes {

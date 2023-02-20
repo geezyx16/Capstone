@@ -6,7 +6,7 @@ export default () => html`
       <table class="data_table">
         <thead>
           <tr class="table_heading">
-            <th colspan="5">Economic Calendar</th>
+            <th class="table_head" colspan="5">Economic Calendar</th>
           </tr>
         </thead>
         <tbody class="data_body">

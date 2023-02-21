@@ -2,8 +2,9 @@
   --main-background: #f9f8f8f8;
   --btn-color: #1768ac;
   --btn-color2: #cc2936;
-  --footer: #817f75;
+  --footer: #070b0d;
   --black: #1c1d21;
+  --hover-effect: #090e11
 }
 
 
@@ -18,9 +19,9 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
   padding: 15px;
-
+  background: url(./project_images/background1.jpg) center center/cover no-repeat;
 }
 
 a {
@@ -38,18 +39,40 @@ a {
   /* border: 1px solid; */
   border-radius: 6px;
   box-shadow: 10px 5px 5px rgb(41, 40, 40);
-  background-color: var(--footer);
+  background-color: #123247;
+  opacity: 0.85;
+  color: white;
 }
 
 .menu_items {
   display: flex;
   list-style: none;
+  color: white;
 
 }
 
-.nav_items > a {
+.nav_list{
   padding: 0 20px;
-  list-style: none;
+  color: white;
+}
+
+.nav_list:hover {
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-delay: 0.25s;
+  color: var(--hover-effect);
+}
+
+.nav_menu > a {
+  color: white;
+}
+
+.nav_menu > a:hover {
+  cursor: pointer;
+  color: var(--hover-effect);
+  transition: ease-in-out;
+  transition-delay: 0.25s;
+
 }
 
 
@@ -62,9 +85,10 @@ a {
 }
 
 .table_head {
+  color: white;
   text-align: center;
   border: 1px solid #1768ac;
-  /* margin: 50px 0; */
+  font-size: 25px;
 }
 
 .economic_data {
@@ -79,7 +103,7 @@ a {
   /* border: 1px solid green; */
   justify-content: center;
   align-items: center;
-  background-color: #817f75;
+  background-color: var(--footer);
   border-radius: 6px;
   padding: 20px;
 }
@@ -89,6 +113,7 @@ td {
   padding: 0 50px;
   text-align: center;
   border: 0.5px solid black;
+  color: white;
 }
 
 
@@ -99,6 +124,7 @@ td {
   background-color: var(--footer);
   border-radius: 6px;
   align-content: flex-end;
+
 }
 
 .foot_notes {
@@ -108,6 +134,10 @@ td {
   align-items: center;
   padding: 15px;
 
+}
+
+.end_note {
+  color: white;
 }
 
 

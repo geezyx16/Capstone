@@ -5,7 +5,7 @@ import { capitalize } from "lodash";
 
 const router = new Navigo("/");
 
-function render(state = store.Home) {
+function render(state = store.About) {
   document.querySelector("#root").innerHTML = `
   ${Nav(store.Links)}
   ${Main(state)}

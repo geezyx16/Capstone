@@ -1,15 +1,18 @@
 import html from "html-literal";
 
-export default () => html`
+export default links => html`
   <nav class="main_nav">
     <div class="nav_menu">
-      <a href="">L2E</a>
-      <ul class="menu_items">
-        <li class="nav_items"><a href="#">About</a></li>
-        <li class="nav_items"><a href="#">Learn</a></li>
-        <li class="nav_items"><a href="#">Contact Us</a></li>
+      <a href="" alt="Logo">L2E</a>
+      <ul class="menu_items nav-links">
+        ${links
+          .map(
+            link =>
+              `<li><a href="/${link.title}" title="${link.title}" data-navigo class="nav_list">${link.text}</a></li>`
+          )
+          .join("")}
       </ul>
-      <a href=""><i class="gg-search"></i></a>
+      <a href="" alt="Search"><i class="gg-search"></i></a>
     </div>
   </nav>
 `;

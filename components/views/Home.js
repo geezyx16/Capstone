@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
   <main class="main_content" id="Home">
-    <div class="economic_data">
+    <!-- <div class="economic_data">
       <table class="data_table">
         <thead>
           <tr class="table_heading">
@@ -124,6 +124,14 @@ export default () => html`
           </tr>
         </tbody>
       </table>
+    </div> -->
+    <div class="all_symbols">
+      <div class="sym_one">
+        <a class="symbol">Asset 1</a>
+      </div>
+      <div class="sym_two">
+        <a class="symbol">Asset 2</a>
+      </div>
     </div>
   </main>
 `;

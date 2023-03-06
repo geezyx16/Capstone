@@ -20,9 +20,12 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: var(--main-background); */
-  padding: 15px;
+  /* padding: 15px; */
   background: url(./project_images/background1.jpg) center center/cover no-repeat;
+
 }
+
+
 
 a {
   color: black;
@@ -37,7 +40,7 @@ a {
   align-items: center;
   padding: 15px;
   /* border: 1px solid; */
-  border-radius: 6px;
+  /* border-radius: 6px; */
   box-shadow: 10px 5px 5px rgb(41, 40, 40);
   background-color: #123247;
   opacity: 0.85;
@@ -71,8 +74,12 @@ a {
   cursor: pointer;
   color: var(--hover-effect);
   transition: ease-in-out;
-  transition-delay: 0.25s;
+  transition-delay: 300ms;
 
+}
+
+.logo {
+  font-size: 20px;
 }
 
 
@@ -118,12 +125,35 @@ td {
 
 
 
+/* ======================================= Symbols ============================================= */
+
+.all_symbols {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 30px;
+  /* border: 1px solid grey; */
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: var(--footer);
+  color: white;
+  margin: 40px;
+  box-shadow: 0px 0px 2px 1px #fff;
+  opacity: 0.8;
+}
+
+
 /*======================================== Footer ==============================================*/
 
 .extras {
   background-color: var(--footer);
-  border-radius: 6px;
+  /* border-radius: 6px; */
   align-content: flex-end;
+  height: 15vh;
 
 }
 
@@ -202,12 +232,10 @@ td {
   padding: 10px 100px;
   height: 300px;
   width: 700px;
-
+  background-color: #1c1d21;
+  border-radius: 6px;
 }
 
-.myPhoto {
-
-}
 
 .portrait {
   float: left;
@@ -218,6 +246,7 @@ td {
 
 .bio > p {
   padding: 0 20px;
+  color: white;
 
 }
 
@@ -225,3 +254,94 @@ td {
   border-radius: 20px;
 
 }
+
+
+
+/* ===============================================Contact Page ================================================================ */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+
+}
+
+.main_forms {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 50vh;
+  border-radius: 8px;
+  background-color: #1c1d21;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0.9;
+}
+
+input {
+  padding: 10px;
+  width: 45vh;
+  background: none;
+  color: white;
+}
+
+label {
+  padding: 10px;
+
+}
+
+textarea {
+  width: 45vh;
+  height: 20vh;
+  background: none;
+  color: white;
+
+}
+
+.btn_container {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+
+  /* padding-bottom: 10px; */
+}
+
+
+
+.send_btn {
+  width: max-content;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  color: white;
+
+}
+
+.main_forms.btn_container {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+/* ============================================== Learn Page ======================================================================= */
+
+.learn {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 50px 50px 50px;
+  column-gap: 10px;
+  height: 80vh;
+  color: white;
+  justify-content: center;
+  align-self: stretch;align-content: center;
+  border: 1px solid black;
+}
+
+

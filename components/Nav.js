@@ -3,7 +3,7 @@ import html from "html-literal";
 export default links => html`
   <nav class="main_nav">
     <div class="nav_menu">
-      <a href="" alt="Logo">L2E</a>
+      <a href="" alt="Logo" class="logo">L2E</a>
       <ul class="menu_items nav-links">
         ${links
           .map(

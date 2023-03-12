@@ -1,13 +1,11 @@
-/* eslint-disable no-useless-escape */
 import html from "html-literal";
-// eslint-disable-next-line prettier/prettier
-// import newimg from "assets\images";
+import myImg from "../../assets/images/newimg.jpg";
 
 export default () => html`
   <main class="about" id="About">
     <div class="container">
       <div class="myPhoto">
-        <!-- <img src="" class="photo" alt="" /> -->
+        <img src="${myImg}" class="portrait" alt="" />
       </div>
       <div class="bio">
         <p>

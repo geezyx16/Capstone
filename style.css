@@ -41,7 +41,7 @@ a {
   padding: 15px;
   /* border: 1px solid; */
   /* border-radius: 6px; */
-  box-shadow: 10px 5px 5px rgb(41, 40, 40);
+  box-shadow: 0px 5px 5px rgb(41, 40, 40);
   background-color: #123247;
   opacity: 0.85;
   color: white;
@@ -233,8 +233,8 @@ td {
   height: 300px;
   width: 700px;
   background-color: #1c1d21;
-  border-radius: 6px;
-  box-shadow: 0px 0px 1px 1px #000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 2px #000;
 }
 
 
@@ -246,13 +246,13 @@ td {
 }
 
 .bio > p {
-  padding: 0 20px;
+  padding: 10px 10px;
   color: white;
 
 }
 
 .myPhoto > img {
-  border-radius: 20px;
+  border-radius: 50%;
 
 }
 
@@ -335,14 +335,35 @@ textarea {
 
 .learn {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: 50px 50px 50px;
-  column-gap: 10px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  gap: 10px;
   height: 80vh;
-  color: white;
+  color: black;
   justify-content: center;
-  align-self: stretch;align-content: center;
+  align-self: stretch;
+  align-content: center;
   border: 1px solid black;
 }
 
+.info {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.info_one {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+
+}
+
+.info > .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
 

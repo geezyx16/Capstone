@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <main class="main_content" id="Home">
     <!-- <div class="economic_data">
       <table class="data_table">
@@ -127,10 +127,10 @@ export default () => html`
     </div> -->
     <div class="all_symbols">
       <div class="sym_one">
-        <a class="symbol">Asset 1</a>
+        <a class="symbol">${state.stockName}; "Current Price"</a>
       </div>
       <div class="sym_two">
-        <a class="symbol">Asset 2</a>
+        <a class="symbol">Sample: AAPL; "Current Price"</a>
       </div>
     </div>
   </main>
